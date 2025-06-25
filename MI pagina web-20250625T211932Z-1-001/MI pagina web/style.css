@@ -1,0 +1,221 @@
+body { 
+  display: grid;
+  place-items: center; /* Centra tanto horizontal como verticalmente */
+ 
+}
+
+
+
+.parrafo_largo {
+  font-family: "Poetsen One", sans-serif;
+    color: darkcyan;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+.pocoyo_surgio {
+  font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container{
+    display: flex;    
+  justify-content: space-between;
+}
+.parrafo{
+  background-color: aqua;
+  font-family: "Poetsen One", sans-serif;
+    color: darkcyan;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+ .carousel-container {
+            width: 500px; /* Ancho del contenedor del carrusel */
+            overflow: hidden; /* Oculta las imágenes que no están visibles */
+            position: relative;
+        }
+
+        .carousel {
+            display: flex; /* Coloca las imágenes en línea horizontalmente */
+            transition: transform 0.5s ease-in-out; /* Animación suave al cambiar de imagen */
+        }
+
+        .carousel img {
+            width: 100%; /* Cada imagen ocupa el ancho del contenedor */
+            flex-shrink: 0; /* Evita que las imágenes se encojan */
+        }
+
+        .nav-buttons {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .nav-buttons button {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+            padding: 5px 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            opacity: 1;
+        }
+
+        .dots-container {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #bbb;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #333;
+        }
+        .carrusel-contenedor {
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
+  scroll-snap-type: x mandatory; /* Permite la navegación snap-to-next */
+}
+
+.carrusel-elemento {
+
+  flex-shrink: 0; /* Evita que los elementos se encogen */
+  width: 100%; /* Ajusta el ancho a la pantalla */
+  scroll-snap-align: start; /* Alinea el elemento al principio del snap */
+  background-color: cornflowerblue;
+  padding: 20px;
+  box-sizing: border-box;
+ 
+}
+
+.carrusel-elemento img {
+    display: block;
+    margin: 0 auto; /* Reafirmado para el carrusel horizontal */
+    max-width: 100%;
+    height: auto;
+}
+.texto-abajo {
+background-color: aqua;
+  font-family: "Poetsen One", sans-serif;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+ text-align: center;
+}
+.premios {
+ font-family: "Poetsen One", sans-serif;
+}
+
+.carrusel-contenedor-vertical {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+   width: max-content;/* Ajusta el ancho al contenido */
+    height: 900px; /* Altura del contenedor del carrusel */
+    scroll-snap-type: y mandatory; /* Permite la navegación snap-to-next vertical */
+}
+
+.carrusel-elemento-vertical {
+    flex-shrink: 0;
+    height: 100%; /* Ajusta la altura a la pantalla del contenedor vertical */
+    scroll-snap-align: start; /* Alinea el elemento al principio del snap vertical */
+    display: flex; /* Para alinear imagen y texto horizontalmente */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+}
+
+.carrusel-elemento-vertical img {
+    display: block;
+    max-height: 80%; /* Ajusta la altura máxima de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+.Albunes {
+  display: flex; 
+  text-align: center;
+  column-gap: 20px; 
+}
+
+.flex-padre {
+  display: flex; 
+}
+#logo{
+ text-align: center;
+ 
+}
+
+.contenedor-imagen {
+  width: 300px; /* Ancho fijo del contenedor */
+  height: 200px; /* Alto fijo del contenedor */
+  overflow-y: auto; /* Añade scroll vertical cuando el contenido excede el alto */
+}
+
+.contenedor-imagen img {
+  display: block; /* Evita espacio extra debajo de la imagen */
+  max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+}
+
+/* Footer semántico */
+footer {
+  background: #e0f7fa;
+  padding: 30px 0 10px 0;
+  text-align: center;
+  border-top: 3px solid #00bcd4;
+  margin-top: 40px;
+}
+
+footer figure {
+  margin: 0 auto 10px auto;
+}
+
+footer img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+footer #logo {
+  margin: 10px auto 15px auto;
+  display: block;
+}
+
+.footer_credit-text {
+  font-family: "Poetsen One", sans-serif;
+  color: #00796b;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Mejora de accesibilidad para small */
+footer small {
+  font-size: 0.9em;
+  color: #555;
+}
